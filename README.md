@@ -44,10 +44,11 @@ sudo apt install maven -y
 ```
 <img width="1662" height="264" alt="Image" src="https://github.com/user-attachments/assets/1638d23a-55e1-4131-a8a6-860ba652f68e" />
 
-## Verify Maven installation
+## Maven Validation
 ```bash
-mvn -v
+mvn validate
 ```
+<img width="1302" height="409" alt="mvn valication" src="https://github.com/user-attachments/assets/7ee58c72-78a4-4281-94a3-0b0076ca2651" />
 
 ## Install Apache Tomcat
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/90d90c9a-2a20-4bea-a81e-1ac00e839d28" />
@@ -135,3 +136,6 @@ You should see the index.jsp page of your web application.
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e9ac6d65-7b00-4973-8b0d-09f119ddebc6" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1054b9eb-9f99-44a7-9ef2-c83e9f8df908" />
+<img width="624" height="525" alt="winscp" src="https://github.com/user-attachments/assets/7120c05e-0062-463c-955a-f9986f677e7f" />
+<img width="1061" height="654" alt="winscp2" src="https://github.com/user-attachments/assets/19f58ae3-775e-45d7-8fa7-89e34941d32e" />
+<img width="1582" height="267" alt="starting tomcat" src="https://github.com/user-attachments/assets/ab8acb25-4bf7-453c-ab64-a4e5ad99b169" />
