@@ -33,46 +33,46 @@ To install Java 17, run the following commands (for Ubuntu/Debian):
 sudo apt update
 sudo apt install openjdk-17-jdk -y
 ```
-java -version
-# Output should be something like:
-# openjdk version "17.0.x"...
+## java -version
+### Output should be something like:
+### openjdk version "17.0.x"...
 
-Install Maven
+## Install Maven
 ```bash
 sudo apt install maven -y
 ```
-Verify Maven installation
+## Verify Maven installation
 ```bash
 mvn -v
 ```
 
-Install Apache Tomcat
+## Install Apache Tomcat
 ```bash
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.110/bin/apache-tomcat-9.0.110.tar.gz
 tar -xvzf apache-tomcat-9.0.110.tar.gz
 ```
-Add Tomcat User for Manager Access
+## Add Tomcat User for Manager Access
 ```bash
 sudo vi tomcat/conf/tomcat-users.xml
 ```
-Add the following inside <tomcat-users>
+## Add the following inside <tomcat-users>
 ```bash
 <role rolename="manager-gui"/>
 <role rolename="manager-script"/>
 <user username="admin" password="admin123" roles="manager-gui,manager-script"/>
 ```
-Edit the context.xml file to allow remote access
+## Edit the context.xml file to allow remote access
 ```bash
 sudo vi tomcat/webapps/manager/META-INF/context.xml
 ```
-Comment out the IP restriction
+## Comment out the IP restriction
 ```bash
 <!--
 <Valve className="org.apache.catalina.valves.RemoteAddrValve"
        allow="127\.\d+\.\d+\.\d+|::1" />
 -->
 ```
-Update pom.xml for Java 17 is available in the pom.xml file in this repository
+## Update pom.xml for Java 17 is available in the pom.xml file in this repository
 
 ## Clean and Package the Application
 ### Navigate to your project directory
